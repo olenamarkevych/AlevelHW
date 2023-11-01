@@ -4,7 +4,6 @@ package ua.markevych.hw3;
 // Вводиться рядок, що складається зі слів, розділених пробілами.
 // Потрібно порахувати кількість слів у ній.
 
-
 public class Task3 {
     public static void main(String[] args) {
         String text = "It is a bad idea to use a prefix to know the type of variable";
