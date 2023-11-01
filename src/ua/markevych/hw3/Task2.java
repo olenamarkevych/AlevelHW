@@ -12,7 +12,7 @@ public class Task2 {
 
     }
 
-    public static String reversString(String str) { // метод reversString переобразує введену користувачем строку до дзеркального відображення
+    public static String reversString(String str) {
         String str1 = "";
         for (int i = str.length() - 1; i >= 0; i--) {
             str1 += str.charAt(i);
