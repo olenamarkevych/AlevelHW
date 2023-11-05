@@ -19,9 +19,18 @@ public class Task4 {
         System.out.println("c= " + x1M);
 
         //знаходження мінімального числа
-       double numberMin = Math.min (xM, yM);
+        double numberMin = Math.min (xM, yM);
        double numberMin1 = Math.min (numberMin, x1M);
 
-        System.out.println("Мінімальне за модулем число = " + numberMin1);
+       if (numberMin1 == xM) {
+           System.out.println("Мінімальне за модулем число = " + x);
+       }
+        if (numberMin1 == yM) {
+            System.out.println("Мінімальне за модулем число = " + y);
+        }
+        if (numberMin1 == x1M) {
+            System.out.println("Мінімальне за модулем число = " + x1);
+        }
+
     }
 }
