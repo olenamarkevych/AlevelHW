@@ -8,8 +8,8 @@ public class Task2 {
         System.out.println(text);
         String strwithout = text.replace(" ", "");
         System.out.println(strwithout);
-        palindrom(strwithout);
-
+        boolean S = palindrom(strwithout);
+        System.out.println(S);
     }
     public static String reversString(String str) {
         String str1 = "";
@@ -19,16 +19,11 @@ public class Task2 {
         return str1;
     }
 
-    public static void palindrom(String str) {
+   public static boolean palindrom(String str) {
         String s = reversString(str);
         System.out.println(s);
-
         if (str.equals(s)) {
-            System.out.println("рядок є паліндромом");
-        } else {
-            System.out.println("рядок не паліндром");
-        }
-
+            return true;
+        } return false;
     }
-
 }
