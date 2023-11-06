@@ -13,6 +13,7 @@ public class Task1 {
         System.out.println();
        System.out.println(myArray.length);
 
+
         double seredAr = arithmetic (myArray);
         System.out.println("середнє аріфметичне = " + seredAr);
         double serGeom = geometric (myArray);
