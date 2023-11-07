@@ -5,6 +5,7 @@ package ua.markevych.hw4;
 //P.S. значення елементів можна обмежити значеннями 1-10 включно.
 
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Task1 {
     public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class Task1 {
     public static void  fillArray (int[] array){
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(9) + 1;
+            array[i] = ThreadLocalRandom.current().nextInt(1, 10);
                 System.out.print(array[i]);
         }
     }
