@@ -21,7 +21,6 @@ public class Task1 {
         System.out.println("середнє геометричне = " + serGeom);
     }
     public static void  fillArray (int[] array){
-        Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = ThreadLocalRandom.current().nextInt(1, 10);
                 System.out.print(array[i]);
