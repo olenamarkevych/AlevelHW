@@ -21,7 +21,6 @@ public class Task2 {
     public static void fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = ThreadLocalRandom.current().nextInt(1,1000);
-           // System.out.print(array[i] + " ");
 
         }
     }
