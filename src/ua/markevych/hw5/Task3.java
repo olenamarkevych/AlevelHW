@@ -1,7 +1,5 @@
 package ua.markevych.hw5;
 
-import java.util.Arrays;
-
 //Даний двовимірний масив NxN(кількість рядків = кількість стовпців),
 //  написати програму
 //яка поміняє місцями стовпці та рядки.
@@ -25,17 +23,18 @@ public class Task3 {
             System.out.println();
         }
     }
-// міняємо місцями стовпці і рядки
-        public static int[][] changeRowColl ( int[][] mat){
-            int r = mat.length;
-            int c = mat[0].length;
-            int[][] mat1 = new int[r][c];
-            for (int i = 0; i < r; i++) {
-                for (int j = 0; j < c; j++) {
-                    mat1[i][j] = mat[j][i];
-                }
+
+    // міняємо місцями стовпці і рядки
+    public static int[][] changeRowColl(int[][] mat) {
+        int r = mat.length;
+        int c = mat[0].length;
+        int[][] mat1 = new int[r][c];
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                mat1[i][j] = mat[j][i];
             }
-            return mat1;
         }
+        return mat1;
     }
+}
 
