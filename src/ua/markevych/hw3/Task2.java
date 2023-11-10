@@ -11,6 +11,7 @@ public class Task2 {
         boolean S = palindrom(strwithout);
         System.out.println(S);
     }
+
     public static String reversString(String str) {
         String str1 = "";
         for (int i = str.length() - 1; i >= 0; i--) {
