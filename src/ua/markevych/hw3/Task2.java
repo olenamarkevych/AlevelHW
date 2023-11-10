@@ -22,8 +22,6 @@ public class Task2 {
     public static boolean palindrom(String str) {
         String s = reversString(str);
         System.out.println(s);
-        if (str.equals(s)) {
-            return true;
-        } return false;
+        return (str.equals(s));
     }
 }
