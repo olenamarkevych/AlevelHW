@@ -9,31 +9,28 @@ import java.util.Collections;
 
 public class Task2 {
     public static void main(String[] args) {
-        Integer[] myArray = new Integer[13];
+        int[] myArray = new int[20];
         fillArray(myArray);
         System.out.println(Arrays.toString(myArray));
-        Integer[] myArray1 = Arrays.copyOf(myArray, myArray.length);
-        boolean eqArray = sortFall(myArray1);
-        System.out.println(Arrays.toString(myArray1));
-        System.out.println(eqArray);
+        boolean sortArray = sortFall(myArray);
+        System.out.println(sortArray);
     }
 
     //заповнення масива
-    public static void fillArray(Integer[] array) {
+    public static void fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = ThreadLocalRandom.current().nextInt(1, 50);
         }
     }
 
     //сортування за спаданням і перевірка
-    public static boolean sortFall(Integer[] fallen) {
-        Arrays.sort(fallen, Collections.reverseOrder());
+    public static boolean sortFall(int[] fallen) {
         for (int i = 0; i < fallen.length; i++) {
-            if (fallen[i] > fallen[i + 1]) {
-                return true;
+            if (fallen[i] < fallen[i + 1]) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 }
 
