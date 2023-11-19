@@ -24,7 +24,7 @@ public class Phone {
         System.out.println("Вам дзвонить  " + name);
     }
 
-    void getNumber(int number) {
+    void getNumber() {
         System.out.println("Номер телефону   " + number);
     }
 
@@ -39,7 +39,7 @@ public class Phone {
         System.out.println(phone.model);
         System.out.println(phone.weight);
         phone.receiveCall("Olena");
-        phone.getNumber(phone.number);
+        phone.getNumber();
     }
 
     public class Phone2 {
