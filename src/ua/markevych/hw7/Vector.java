@@ -85,7 +85,7 @@ public class Vector {
         System.out.println("Косінус кута = " + firstlengs.cosVector(2, 3, 1));
         System.out.println("Сума векторів = " + Arrays.toString(firstlengs.sumVector(2, 3, 1)));
         System.out.println("Різниця векторів = " + Arrays.toString(firstlengs.risnVector(2, 3, 1)));
-        randomN(7);
+        randomN(8);
     }
 }
 
