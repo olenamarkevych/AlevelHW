@@ -42,11 +42,9 @@ public class Task2 {
 
     public static List<Integer> getOddNumber(List<Integer> numbers) {
         ArrayList<Integer> num = new ArrayList<Integer>();
-        int j = 0;
         for (int i = 0; i < numbers.size(); i++) {
             if (numbers.get(i) % 2 != 0) {
                 num.add(numbers.get(i));
-                j++;
             }
         }
         return num;
